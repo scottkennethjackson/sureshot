@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /*border: .5px dashed black;*/
+    padding: 0;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #d82737;
+    padding: 1rem;
+}
+
+#footer-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row-xs {
+    display: flex;
+    justify-content: space-between;
+}
+
+#location {
+    margin-bottom: 1rem;
+}
+
+.block {
+    margin: .5rem;
+}
+
+.heading {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+#address {
+    margin-bottom: 1rem;
+}
+
+address {
+    font-style: normal;
+}
+
+.row {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.row svg {
+    margin-right: .25rem;
+}
+
+ul {
+    list-style: none;
+}
+
+#social-btns {
+    display: flex;
+}
+
+#social-btns li {
+    display: flex;
+    margin-right: 1rem;
+}
+
+#social-btns li:last-child {
+    margin-right: 0;
+}
+
+a:hover {
+    color: #66bfff;
+}
+
+a:active {
+    color: #5cace6;
+}
+
+.btn {
+    display: flex;
+    fill: white;
+}
+
+.btn:hover {
+    fill: #66bfff;
+}
+
+.btn:active {
+    fill: #5cace6;
+}
+
+.line-xs {
+    display: block;
+    width: 1px;
+    background-color: white;
+}
+
+.line-sm,
+.line-lg {
+    display: none;
+}
+
+#sitemap {
+    text-align: right;
+}
+
+#contact {
+    margin: 1rem .5rem;
+}
+
+#links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar {
+    display: block;
+    height: .25rem;
+    width: 100%;
+    background-color: white;
+}
+
+#footer-logo {
+    height: 5rem;
+}
+
+#copyright {
+    text-align: center;
+    color: white
+}
+
+/* sm styling */
+@media screen and (min-width: 640px) {
+    .row-sm {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sitemap {
+        text-align: center;
+
+    }
+
+    .line-sm {
+        display: block;
+    width: 1px;
+    background-color: white;
+    }
+
+    #contact {
+        margin-top: .5rem;
+    }
+
+    #links ul {
+        display: block;
+    }
+}
+
+/* md styling */
+@media screen and (min-width: 768px) {
+    .block {
+        margin: .5rem 1rem
+    }
+
+    #contact {
+        margin: .5rem 0 1rem 1rem
+    }
+}
+
+/* xl styling */
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+    }
+
+    .line-lg {
+        display: block;
+        width: 1px;
+        background-color: white;
+    }
+
+    #contact {
+        margin: .5rem 1rem
+    }
+}
