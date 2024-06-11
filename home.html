@@ -11,15 +11,102 @@
         <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="./images/favicon.io/site.webmanifest">
+        <link rel="manifest" href="./images/favicon_io/site.webmanifest">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
-        <link rel="stylesheet" href="./styles/footer.css">
+        <link rel="stylesheet" href="./styles/home.css">
     </head>
     <body>
-        <main></main>
+        <main>
+            <section id="banner" class="flex-center bg-center">
+                <div id="banner-col" class="flex-center flex-col filter">
+                    <img src="./images/logos/white-outline.png" id="banner-logo" alt="Sureshot">
+                    <a href="#">
+                        <button class="btn bg-red text-white">Buy Beer</button>
+                    </a>
+                </div>
+            </section>
+
+            <section id="shop" class="flex-center flex-col padding">
+                <img src="./images/headings/sureshop.png" class="heading-img" alt="Sureshop">
+                <div class="container flex-center flex-col w-full">
+                    <a href="#" class="shop-block relative flex-center margin-bottom decoration-none" role="button">
+                        <span id="core" class="background-img bg-center w-full h-full"></span>
+                        <p class="shop-btn flex-center absolute filter uppercase text-white font-lg bold">Core</p>
+                    </a>
+
+                    <a href="#" class="shop-block relative flex-center margin-bottom decoration-none" role="button">
+                        <span id="beer" class="background-img bg-center w-full h-full"></span>
+                        <p class="shop-btn flex-center absolute filter uppercase text-white font-lg bold">All Beer</p>
+                    </a>
+
+                    <a href="#" class="shop-block relative flex-center margin-bottom decoration-none" role="button">
+                        <span id="merch" class="background-img bg-center w-full h-full"></span>
+                        <p class="shop-btn flex-center absolute filter uppercase text-white font-lg bold">Merch</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="quote" class="animated-background flex-center padding">
+                <h2 class="margin-y max-lg text-white font-lg bold">At Sureshot we're all about brewing beer to be enjoyed. High quality and small batch, from the beating belly of Manchester.</h2>
+            </section>
+
+            <section id="fresh-drops" class="flex-center flex-col padding-y">
+                <img src="./images/headings/fresh-drops.png" class="heading-img" alt="Fresh Drops">
+                <div class="carousel">
+                    <img src="./images/home/placeholder.png" class="product padding-x w-full" alt="Placeholder">
+                    <img src="./images/home/placeholder.png" class="product padding-x w-full" alt="Placeholder">
+                    <img src="./images/home/placeholder.png" class="product padding-x w-full" alt="Placeholder">
+                    <img src="./images/home/placeholder.png" class="product padding-x w-full" alt="Placeholder">
+                </div>
+            </section>
+
+            <section id="taproom" class="bg-center">
+                <div class="flex-center flex-col filter padding">
+                    <img src="./images/logos/taproom.png" id="taproom-logo" class="margin-top" alt="Sureshot Brewing Taproom">
+                    <p class="margin-y max-md text-white">Our Taproom is nestled in an arch under Piccadilly Station, serving brewery-fresh keg and cask beer from our site next door.</p>
+                    <a href="#" class="margin-bottom">
+                        <button class="btn text-white">Opening Times</button>
+                    </a>
+                </div>
+            </section>
+
+            <section id="events" class="flex-center flex-col padding-top">
+                <img src="./images/headings/events.png" class="heading-img" alt="Events">
+                <div class="carousel">
+                    <img src="./images/home/placeholder.png" class="event w-full" alt="placeholder">
+                    <img src="./images/home/placeholder.png" class="event w-full" alt="placeholder">
+                    <img src="./images/home/placeholder.png" class="event w-full" alt="placeholder">
+                    <img src="./images/home/placeholder.png" class="event w-full" alt="placeholder">
+                </div>
+                <img src="./images/home/calendar.png" class="w-full max-lg padding" alt="placeholder">
+            </section>
+
+            <section id="subscribe" class="flex-center flex-col bg-center padding">
+                <div id="sub-col" class="flex-start flex-col margin-y max-sm bg-red w-full padding text-white">
+                    <h2 class="margin-bottom font-lg">Be the first to know.</h2>
+                    <h3 class="margin-bottom font-md bold">Like beer? How about discounts?</h3>
+                    <p class="margin-bottom">Sign up to our newsletter and be the first to hear all the latest goss from the brewery. We only email when we've got something to shout about, so no R.I.P. inboxes here.</p>
+                    <input type="email" class="margin-bottom w-full padding-sm" placeholder="Email Address">
+                    <button class="btn margin-auto bg-white">Subscribe</button>
+                </div>
+            </section>
+
+            <!--<section id="contact" class="flex-center flex-col padding">
+                <img src="./images/headings/contact.png" class="heading-img" alt="Contact">
+                <form action="" class="flex-start flex-col bg-blue w-full max-sm padding">
+                    <label for="name" class="bold">Name</label>
+                    <input type="text" name="name" id="name" class="margin-bottom w-full padding-sm" required>
+                    <label for="email" class="bold">Email</label>
+                    <input type="email" name="email" id="email" class="margin-bottom w-full padding-sm" required>
+                    <label for="message" class="bold">Message</label>
+                    <textarea name="message" id="message"  class="margin-bottom w-full padding-sm" rows="8" required></textarea>
+                    <button class="btn margin-auto bg-white">Send</button>
+                </form>
+            </section>-->
+        </main>
     </body>
 </html>

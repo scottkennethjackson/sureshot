@@ -1,9 +1,382 @@
+/* Universal styles */
 * {
     box-sizing: border-box;
     margin: 0;
-    /*border: .5px dashed black;*/
+    /*border: .5px dashed pink;*/
     padding: 0;
     font-family: Lato, sans-serif;
     font-size: 16px;
-    color: white;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bg-center {
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-antique {
+    background-color: #f2e3ce;
+}
+
+.bg-blue {
+    background-color: #5299cb;
+}
+
+.bg-red {
+    background-color: #d82737;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.btn {
+    transition: 100ms;
+    border: none;
+    border-radius: .75rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    justify-content: start;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.filter {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-start {
+    display: flex;
+    align-items: start;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.font-md {
+    font-size: 1.5rem;
+}
+
+.font-lg {
+    font-size: 2rem;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.heading-img {
+    height: 5rem;
+}
+
+.margin {
+    margin: 1rem;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.margin-x {
+    margin: 0 1rem;
+}
+
+.margin-y {
+    margin: 1rem 0;
+}
+
+.max-xs {
+    max-width: 475px;
+}
+
+.max-sm {
+    max-width: 640px;
+}
+
+.max-md {
+    max-width: 768px;
+}
+
+.max-lg {
+    max-width: 1024px;
+}
+
+.padding {
+    padding: 1rem;
+}
+
+.padding-sm {
+    padding: .5rem;
+}
+
+.padding-top {
+    padding-top: 1rem;
+}
+
+.padding-x {
+    padding: 0 1rem;
+}
+
+.padding-y {
+    padding: 1rem 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.rounded {
+    border-radius: .75rem;
+}
+
+.text-red {
+    color: #d82737;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.w-full {
+    width: 100%
+}
+
+/* Banner styles */
+#banner {
+    background-image: url(../images/home/banner.png);
+    height: 100vw;
+    max-height: 100vh;
+}
+
+#banner-logo {
+    margin: 1rem;
+    width: 100%;
+}
+
+#banner .btn:hover,
+#banner .btn:focus {
+    transform: translate(-.25rem, -.25rem);
+    box-shadow: .25rem .25rem #5299cb;
+}
+
+#banner .btn:active {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Shop styles */
+#core {
+    background-image: url(../images/home/core.png);
+}
+
+#beer {
+    background-image: url(../images/home/beer.png);
+}
+
+#merch {
+    background-image: url(../images/home/merch.png);
+}
+
+.shop-block {
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.background-img {
+    transition: 500ms;
+}
+
+.shop-block:hover .background-img,
+.shop-block:focus .background-img {
+    transform: scale(1.2);
+}
+
+.shop-block:hover .shop-btn,
+.shop-block:focus .shop-btn {
+    background-color: rgba(216, 39, 55, .5);
+}
+
+/* Quote styling */
+.animated-background {
+    background: linear-gradient(120deg, #d82737, #9599cb, #5299cb, #9599cb, #d82737);
+    background-size: 1000% 100%;
+    -webkit-animation: animation 10s ease infinite;
+    -moz-animation: animation 10s ease infinite;
+    animation: animation 10s ease infinite;
+}
+
+@-webkit-keyframes animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Fresh Drops styling */
+.product {
+    width: 75%;
+}
+
+/* Taproom styling */
+#taproom {
+    background-image: url(../images/home/taproom.png);
+}
+
+#taproom-logo {
+    height: 10rem;
+}
+
+#taproom .btn {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#taproom .btn:hover,
+#taproom .btn:focus {
+    background-color: white;
+    color: black;
+}
+
+#taproom .btn:active {
+    color: #d82737;
+}
+
+/* Events styling */
+.event {
+    height: 40vw;
+}
+
+#events .btn:hover,
+#events .btn:focus {
+    transform: translate(-.25rem, -.25rem);
+    box-shadow: .25rem .25rem #5299cb;
+}
+
+#events .btn:active {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Subscribe styling */
+#subscribe {
+    background-image: url(../images/home/subscribe.png);
+}
+
+#subscribe .btn:hover,
+#subscribe .btn:focus {
+    transform: translate(-.25rem, -.25rem);
+    box-shadow: .25rem .25rem black;
+}
+
+#subscribe .btn:active {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Contact styling */
+label {
+    margin-bottom: .5rem;
+}
+
+#message {
+    resize: none;
+}
+
+/* md styling */
+@media screen and (min-width: 768px) {
+    #shop .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .shop-block {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .product {
+        width: 45%;
+    }
+}
+
+/* lg styling */
+@media screen and (min-width: 1024px) {
+    #banner {
+        background-image: url(../images/home/banner-lg.png);
+    }
+
+    #banner-col {
+        background-color: unset;
+        padding-right: 40%;
+        padding-left: 10%;
+    }
+
+    #fresh-drops .carousel {
+        justify-content: center;
+    }
+
+    .product {
+        width: 24%;
+    }
+
+    #subscribe {
+        padding: 0;
+    }
 }
