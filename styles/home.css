@@ -153,6 +153,10 @@
     padding-top: 1rem;
 }
 
+.padding-bottom {
+    padding-bottom: 1rem;
+}
+
 .padding-x {
     padding: 0 1rem;
 }
@@ -167,6 +171,10 @@
 
 .rounded {
     border-radius: .75rem;
+}
+
+.text-black {
+    color: black;
 }
 
 .text-red {
