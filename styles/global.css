@@ -296,9 +296,23 @@ ul {
     width: 100%
 }
 
+@media screen and (min-width: 475px) {
+    .hide-xs {
+        display: none;
+    }
+
+    .show-xs {
+        display: flex;
+    }
+}
+
 @media screen and (min-width: 640px) {
     .hide-sm {
         display: none;
+    }
+
+    .flex-sm {
+        display: flex;
     }
 
     .show-sm {
