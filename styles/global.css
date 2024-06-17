@@ -122,8 +122,8 @@ address {
     text-decoration: none;
 }
 
-.double-space {
-    margin-bottom: 2rem;
+.double-top {
+    margin-top: 2rem;
 }
 
 .filter {
