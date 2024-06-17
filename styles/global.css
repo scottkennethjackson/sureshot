@@ -331,6 +331,7 @@ address {
 
 .transition-500 {
     transition: 500ms;
+    transition-timing-function: ease-in-out;
 }
 
 ul {
