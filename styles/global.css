@@ -11,6 +11,17 @@
     position: absolute;
 }
 
+.absolute-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
 .absolute-bottom {
     position: absolute;
     bottom: 0;
@@ -21,16 +32,16 @@ address {
     font-style: normal;
 }
 
+.align-end {
+    align-items: end;
+}
+
 .align-center {
     text-align: center;
 }
 
 .align-right {
     text-align: right;
-}
-
-.align-stretch {
-    align-items: stretch;
 }
 
 .bar-x {
@@ -62,6 +73,10 @@ address {
 
 .bg-red {
     background-color: #d82737;
+}
+
+.bg-transparent {
+    background-color: transparent;
 }
 
 .bg-white {
@@ -107,10 +122,19 @@ address {
     text-decoration: none;
 }
 
+.double-space {
+    margin-bottom: 2rem;
+}
+
 .filter {
     background-color: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
 }
 
 .flex {
@@ -154,6 +178,10 @@ address {
     height: 100%;
 }
 
+.h-screen {
+    height: 100dvh;
+}
+
 .heading-img {
     height: 5rem;
 }
@@ -164,6 +192,10 @@ address {
 
 .justify-between {
     justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: end;
 }
 
 .link:hover,
@@ -177,6 +209,10 @@ address {
 
 .margin {
     margin: 1rem;
+}
+
+.margin-sm {
+    margin: .5rem
 }
 
 .margin-auto {
@@ -259,6 +295,15 @@ address {
     margin-left: .25rem
 }
 
+.space-sm {
+    margin-left: .5rem
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
 .svg-btn {
     fill: white;
 }
@@ -284,12 +329,20 @@ address {
     color: #ffffff;
 }
 
+.transition-500 {
+    transition: 500ms;
+}
+
 ul {
     list-style: none;
 }
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.w-third {
+    width: 33.3%;
 }
 
 .w-full {
@@ -317,5 +370,15 @@ ul {
 
     .show-sm {
         display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hide-md {
+        display: none;
+    }
+
+    .flex-md {
+        display: flex;
     }
 }
