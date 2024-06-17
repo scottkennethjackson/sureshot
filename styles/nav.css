@@ -43,7 +43,7 @@
 
 /* dropdown styling */
 #dropdown {
-    left: -100vw;
+    left: -110vw;
     z-index: 98;
 }
 
@@ -51,17 +51,26 @@
     left: 0;
 }
 
+#dropdown .link:hover,
+#dropdown .link:focus {
+    color: #d82737;
+}
+
+#dropdown .link:active {
+    color: #bf2232;
+}
+
 #dropdown .svg-btn {
-    fill: #d82737;
+    fill: black;
 }
 
 #dropdown .svg-btn:hover,
 #dropdown .svg-btn:focus {
-    fill: #66bfff;
+    fill: #d82737;
 }
 
 #dropdown .svg-btn:active {
-    fill: #5cace6;
+    fill: #bf2232;
 }
 
 @media screen and (min-width: 640px) {
