@@ -1,0 +1,186 @@
+.carousel-wrapper {
+    overflow: hidden;
+}
+
+.carousel {
+    transform-style: preserve-3d;
+}
+
+#slide1,
+#slide2,
+#slide3 {
+    background-image: url(../images/mockup/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.carousel-slide {
+    position: absolute;
+    top:0;
+    transition: transform .5s, z-index .5s;
+    z-index: 100;
+    margin: auto;
+    width: 100%;
+}
+
+.carousel-slide.initial,
+.carousel-slide.active {
+    position: relative;
+    z-index: 900;
+}
+
+.carousel-slide.prev,
+.carousel-slide.next {
+    z-index: 800;
+}
+
+.carousel-slide.prev {
+    transform: translateX(-100%);
+}
+
+.carousel-slide.next {
+    transform: translateX(100%);
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left:0;
+}
+
+.next-btn {
+    right:0;
+}
+
+.prev-btn::after,
+.next-btn::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-right: .25rem solid white;
+    border-bottom: .25rem solid white;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+}
+
+.prev-btn::after {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.next-btn::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.nav-block:hover .bg-img {
+    transform: scale(1.2);
+}
+
+#buy-beer {
+    background-image: url(../images/mockup/buy-beer.jpg);
+}
+
+#visit-us {
+    background-image: url(../images/mockup/visit-us.jpg);
+}
+
+#merch {
+    background-image: url(../images/mockup/merch.jpg);
+}
+
+#subs {
+    background-image: url(../images/mockup/subs.jpg);
+}
+
+#mission {
+    background-image: url(../images/mockup/mission.jpg);
+}
+
+#events {
+    background-image: url(../images/mockup/events.jpg);
+}
+
+#about {
+    background-image: url(../images/mockup/about.jpg);
+}
+
+.sticker {
+    height: 10rem
+}
+
+#sticker-logo{
+    bottom: -2.5rem;
+    left: -1rem;
+}
+
+#sticker-namebadge {
+    bottom: -3.5rem;
+    right: 0;
+}
+
+#hours {
+    background-image: url(../images/mockup/hours.jpg);
+}
+
+#where {
+    background-image: url(../images/mockup/location.jpg);
+}
+
+#whats-on {
+    background-image: url(../images/mockup/whats-on.jpg);
+}
+
+#pouring {
+    background-image: url(../images/mockup/pouring.jpg);
+}
+
+#milson {
+    background-image: url(../images/mockup/milson-hero.jpg);
+}
+
+.bg-milson {
+    background-color: #4caa9c;
+}
+
+#absolute-milson {
+    right: -3rem;
+    bottom: -6rem;
+}
+
+#smw {
+    background-image: url(../images/mockup/smw-hero.jpg);
+}
+
+.bg-smw {
+    background-color: #f13d52;
+}
+
+#absolute-smw {
+    top: -2.75rem;
+    left: -2.75rem;
+}
+
+#football-friend {
+    background-image: url(../images/mockup/football-hero.jpg);
+}
+
+.bg-football {
+    background-color: #527b42;
+}
+
+#absolute-football {
+    bottom: -3.5rem;
+    left: -2.5rem;
+}
