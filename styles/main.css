@@ -1,0 +1,508 @@
+@font-face {
+    font-family: "XpressRounded";
+    src: url(../fonts/XpressRounded-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "XpressRoundedLight";
+    src: url(../fonts/XpressRounded-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "XpressRoundedBold";
+    src: url(../fonts/XpressRounded-Bold.ttf) format("truetype");
+}
+
+@keyframes loop {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-50%);}
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /*border: .5px dashed pink;*/
+    padding: 0;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.absolute-below {
+    position: absolute;
+    bottom: -1.25rem;
+}
+
+.absolute-top {
+    position: absolute;
+    top: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.active-text-red:active {
+    color: #d82737 !important;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.aspect-square {
+    aspect-ratio: 1/1;
+}
+
+.aspect-landscape {
+    aspect-ratio: 5/4;
+}
+
+.aspect-panorama {
+    aspect-ratio: 2/1
+}
+
+.aspect-portrait {
+    aspect-ratio: 4/5;
+}
+
+.aspect-widescreen {
+    aspect-ratio: 16/9;
+}
+
+.bg-center {
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-red {
+    background-color: #d82737;
+}
+
+.bg-opaque-white {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.black {
+    font-weight: 900;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.break {
+    margin-bottom: 1rem;
+}
+
+.break-double {
+    margin-bottom: 2rem;
+}
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-thick {
+    border-width: 2px;
+    border-style: solid;
+}
+
+.border-black {
+    border-color: black !important;
+}
+
+.border-white {
+    border-color: white !important;
+}
+
+.btn-sm {
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.compressed {
+    letter-spacing: -.2rem;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.font-xpress {
+    font-family: "XpressRounded";
+}
+
+.font-xpress-light {
+    font-family: "XpressRoundedLight";
+}
+
+.font-xpress-bold {
+    font-family: "XpressRoundedBold";
+}
+
+.font-xs {
+    font-size: .25rem;
+}
+
+.font-sm {
+    font-size: .5rem;
+}
+
+.font-md {
+    font-size: 1.5rem;
+}
+
+.font-lg {
+    font-size: 2rem;
+}
+
+.font-xl {
+    font-size: 2.5rem;
+}
+
+.font-xxl {
+    font-size: 3rem;
+}
+
+.h-fit {
+    height: fit-content;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.h-half {
+    height: 50%;
+}
+
+.h-screen {
+    height: 100dvh;
+}
+
+.h-third {
+    height: 33.3%;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.hover-bg-white:hover {
+    background-color: white;
+}
+
+.hover-bg-opaque-red:hover {
+    background-color: rgba(216, 39, 55, .5);
+}
+
+.hover-text-black:hover {
+    color: black;
+}
+
+.margin {
+    margin: 1rem;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+.margin-right {
+    margin-right: 1rem;
+}
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.margin-left {
+    margin-left: 1rem;
+}
+
+.margin-x {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.margin-xxy {
+    margin: 1rem 2rem;
+}
+
+.margin-xyy {
+    margin: 2rem 1rem;
+}
+
+.margin-y {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.outline-black {
+    -webkit-text-stroke: 2px black;
+    text-shadow: 4px 4px 0 black;
+}
+
+.outline-blue {
+    -webkit-text-stroke: 2px #5399cb;
+    text-shadow: 4px 4px 0 #5399cb;
+}
+
+.outline-green {
+    -webkit-text-stroke: 2px #2db65e;
+    text-shadow: 4px 4px 0 #2db65e;
+}
+
+.outline-purple {
+    -webkit-text-stroke: 2px #a4adde;
+    text-shadow: 4px 4px 0 #a4adde;
+}
+
+.outline-red {
+    -webkit-text-stroke: 2px #d82737;
+    text-shadow: 4px 4px 0 #d82737;
+}
+
+.outline-yellow {
+    -webkit-text-stroke: 2px #fcce0c;
+    text-shadow: 4px 4px 0 #fcce0c;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.padding-xs {
+    padding: .25rem;
+}
+
+.padding-sm {
+    padding: .5rem;
+}
+
+.padding {
+    padding: 1rem;
+}
+
+.padding-top {
+    padding-top: 1rem;
+}
+
+.padding-right {
+    padding-right: 1rem;
+}
+
+.padding-bottom {
+    padding-bottom: 1rem;
+}
+
+.padding-left {
+    padding-left: 1rem;
+}
+
+.padding-x {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.padding-xxy {
+    padding: 1rem 2rem;
+}
+
+.padding-xyy {
+    padding: 2rem 1rem;
+}
+
+.padding-y {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.rounded-sm {
+    border-radius: .5rem;
+}
+
+.rounded {
+    border-radius: 1rem;
+}
+
+.rounded-top {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.rounded-bottom {
+    border-radius: 0  0 1rem 1rem;
+}
+
+.space-xs {
+    margin-right: .25rem;
+}
+
+.space-sm {
+    margin-right: .5rem;
+}
+
+.space {
+    margin-right: 1rem;
+}
+
+.space-lg {
+    margin-right: 1.5rem;
+}
+
+.space-xl {
+    margin-right: 2rem;
+}
+
+.tab-xs {
+    margin-left: .25rem;
+}
+
+.tab-sm {
+    margin-left: .5rem;
+}
+
+.tab {
+    margin-left: 1rem;
+}
+
+.tab-lg {
+    margin-left: 1.5rem;
+}
+
+.tab-xl {
+    margin-left: 2rem;
+}
+
+.text-inherit {
+    color: inherit;
+}
+
+.text-white {
+    color: white;
+}
+
+.ticker-wrapper {
+    background-image: url(../images/mockup/ticker-bg.jpg);
+    background-size: contain;
+    padding: .5rem 0;
+    overflow: hidden;
+}
+
+.ticker-scroll {
+    display: flex;
+    width: fit-content;
+    white-space: nowrap;
+    animation: loop 30s linear infinite;
+}
+
+.transition-500 {
+    transition: 500ms;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-half {
+    width: 50%;
+}
+
+.w-screen {
+    width: 100dvw;
+}
+
+.w-sixty {
+    width: 60%;
+}
+
+.w-third {
+    width: 33.3%;
+}
+
+.w-two-thirds {
+    width: 66.6%;
+}
