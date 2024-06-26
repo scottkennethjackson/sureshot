@@ -14,7 +14,6 @@
 .absolute-top {
     position: absolute;
     top: 0;
-    width: 100%;
 }
 
 .absolute-right {
@@ -22,10 +21,19 @@
     right: 0;
 }
 
+.absolute-below {
+    position: absolute;
+    bottom: -1.5rem;
+}
+
 .absolute-bottom {
     position: absolute;
     bottom: 0;
-    width: 100%;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
 }
 
 address {
@@ -36,12 +44,12 @@ address {
     align-items: end;
 }
 
-.align-center {
-    text-align: center;
+.aspect-square {
+    aspect-ratio: 1/1;
 }
 
-.align-right {
-    text-align: right;
+.aspect-widescreen {
+    aspect-ratio: 16/9;
 }
 
 .bar-x {
@@ -71,8 +79,28 @@ address {
     background-color: #5299cb;
 }
 
+.bg-football {
+    background-color: #527b42;
+}
+
+.bg-milson {
+    background-color: #4caa9c;
+}
+
+.bg-opaque {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.bg-orange {
+    background-color: #ff4600;
+}
+
 .bg-red {
     background-color: #d82737;
+}
+
+.bg-smw {
+    background-color: #f13d52;
 }
 
 .bg-transparent {
@@ -87,12 +115,24 @@ address {
     font-weight: 700;
 }
 
+.border-rounded {
+    border-radius: 1rem;
+}
+
+.border-white {
+    border: 1px solid white;
+}
+
 .break-xs {
     margin-bottom: .25rem;
 }
 
 .break-sm {
     margin-bottom: .5rem;
+}
+
+.break {
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -102,6 +142,17 @@ address {
     padding: 1rem 2rem;
     text-transform: uppercase;
     font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-mockup {
+    border: 2px solid white;
+    border-radius: .5rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    color: white;
     font-weight: 700;
     cursor: pointer;
 }
@@ -124,6 +175,10 @@ address {
 
 .double-top {
     margin-top: 2rem;
+}
+
+.double-bottom {
+    margin-bottom: 2rem;
 }
 
 .filter {
@@ -162,12 +217,58 @@ address {
     align-items: start;
 }
 
+.font-outline-black {
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: .1rem black;
+    text-shadow: .2rem .2rem 0 black;
+}
+
+.font-outline-red {
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: .1rem #d82737;
+    text-shadow: .2rem .2rem 0 #d82737;
+}
+
+.font-outline-hours {
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: .1rem #5399cb;
+    text-shadow: .2rem .2rem 0 #5399cb;
+}
+
+.font-outline-map {
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: .1rem #a4adde;
+    text-shadow: .2rem .2rem 0 #a4adde;
+}
+
+.font-outline-questions {
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: .1rem #d72439;
+    text-shadow: .2rem .2rem 0 #d72439;
+}
+
+.font-outline-mail {
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: .1rem #fcce0c;
+    text-shadow: .2rem .2rem 0 #fcce0c;
+}
+
 .font-md {
     font-size: 1.5rem;
 }
 
 .font-lg {
     font-size: 2rem;
+}
+
+.font-xl {
+    font-size: 2.5rem;
 }
 
 .h-fit {
@@ -190,6 +291,14 @@ address {
     display: none;
 }
 
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 .justify-between {
     justify-content: space-between;
 }
@@ -205,6 +314,10 @@ address {
 
 .link:active {
     color: #5cace6;
+}
+
+.margin-zero {
+    margin: 0;
 }
 
 .margin {
@@ -259,6 +372,10 @@ address {
     max-width: 1024px;
 }
 
+.object-contain {
+    object-fit: cover;
+}
+
 .padding {
     padding: 1rem;
 }
@@ -279,6 +396,10 @@ address {
     padding: 0 1rem;
 }
 
+.padding-y-sm {
+    padding: .5rem 0;
+}
+
 .padding-y {
     padding: 1rem 0;
 }
@@ -291,12 +412,32 @@ address {
     border-radius: .75rem;
 }
 
+.rounded-top {
+    border-radius: .75rem .75rem 0 0;
+}
+
+.rounded-bottom {
+    border-radius: 0  0 .75rem .75rem;
+}
+
+.space {
+    margin-right: .5rem;
+}
+
+.space-end {
+    margin-right: .5rem;
+}
+
 .space-xs {
     margin-left: .25rem
 }
 
 .space-sm {
     margin-left: .5rem
+}
+
+.space-start {
+    margin-left: .5rem;
 }
 
 .sticky {
@@ -317,8 +458,28 @@ address {
     fill: #5cace6;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right;
+}
+
 .text-black {
     color: black;
+}
+
+.text-blue {
+    color: #5299cb;
+}
+
+.text-orange {
+    color: #ff4600;
 }
 
 .text-red {
@@ -340,6 +501,10 @@ ul {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.w-half {
+    width: 50%;
 }
 
 .w-third {
