@@ -1,19 +1,10 @@
 .carousel-wrapper {
+    width: 100%;
     overflow: hidden;
 }
 
 .carousel {
     transform-style: preserve-3d;
-}
-
-#slide1,
-#slide2,
-#slide3 {
-    background-image: url(../images/mockup/banner.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    aspect-ratio: 1/1;
 }
 
 .carousel-slide {
@@ -23,6 +14,8 @@
     z-index: 100;
     margin: auto;
     width: 100%;
+    aspect-ratio: 1/1;
+    max-height: 100dvh;
 }
 
 .carousel-slide.initial,
@@ -42,6 +35,14 @@
 
 .carousel-slide.next {
     transform: translateX(100%);
+}
+
+#slide1,
+#slide2,
+#slide3 {
+    background-image: url(../images/mockup/banner.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .prev-btn,
@@ -84,10 +85,6 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.nav-block:hover .bg-img {
-    transform: scale(1.2);
-}
-
 #buy-beer {
     background-image: url(../images/mockup/buy-beer.jpg);
 }
@@ -120,16 +117,6 @@
     height: 10rem
 }
 
-#sticker-logo{
-    bottom: -2.5rem;
-    left: -1rem;
-}
-
-#sticker-namebadge {
-    bottom: -3.5rem;
-    right: 0;
-}
-
 #hours {
     background-image: url(../images/mockup/hours.jpg);
 }
@@ -154,9 +141,14 @@
     background-color: #4caa9c;
 }
 
-#absolute-milson {
-    right: -3rem;
-    bottom: -6rem;
+#sticker-milson {
+    right: -2.75rem;
+    bottom: -5.5rem;
+}
+
+.outline-milson {
+    -webkit-text-stroke: 2px #4caa9c;
+    text-shadow: 4px 4px 0 #4caa9c;
 }
 
 #smw {
@@ -167,9 +159,14 @@
     background-color: #f13d52;
 }
 
-#absolute-smw {
-    top: -2.75rem;
-    left: -2.75rem;
+#sticker-smw {
+    top: -2.5rem;
+    left: -2.5rem;
+}
+
+.outline-smw {
+    -webkit-text-stroke: 2px #f13d52;
+    text-shadow: 4px 4px 0 #f13d52;
 }
 
 #football-friend {
@@ -180,7 +177,91 @@
     background-color: #527b42;
 }
 
-#absolute-football {
-    bottom: -3.5rem;
-    left: -2.5rem;
+#sticker-football {
+    bottom: -1.75rem;
+    right: -1.75rem;
+}
+
+.outline-football {
+    -webkit-text-stroke: 2px #527b42;
+    text-shadow: 4px 4px 0 #527b42;
+}
+
+@media only screen and (min-width: 640px) {
+    .carousel-slide {
+        aspect-ratio: 5/4;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .md-row {
+        flex-direction: row;
+    }
+
+    .md-space {
+        margin-right: .5rem;
+    }
+
+    .md-tab {
+        margin-left: .5rem;
+    }
+
+    #sticker-logo {
+        display: initial;
+        bottom: -4rem;
+        left: 0;
+        height: 16rem;
+    }
+
+    #sticker-namebadge {
+        display: initial;
+        bottom: -5rem;
+        right: 1rem;
+        height: 16rem;
+    }
+
+    .md-half {
+        width: 50%;
+    }
+
+    .md-around {
+        justify-content: space-between;
+    }
+
+    .md-thirtytwo {
+        width: 32%;
+    }
+
+    #sticker-milson {
+        right: -2.5rem;
+        bottom: -5.75rem;
+    }
+
+    #sticker-smw {
+        top: -2rem;
+        left: -2.5rem;
+    }
+
+    #sticker-football {
+        bottom: -1.75rem;
+        right: -1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .lg-margin-auto {
+        margin: 1rem auto
+    }
+
+    #sticker-logo {
+        left: 10%;
+    }
+
+    #sticker-namebadge {
+        right: 10%;
+    }
+
+    .lg-font-md {
+        font-size: 1.5rem;
+    }
 }

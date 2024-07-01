@@ -27,27 +27,13 @@
     font-size: 16px;
 }
 
-a {
-    cursor: pointer;
-}
-
 .absolute {
     position: absolute;
 }
 
 .absolute-below {
     position: absolute;
-    bottom: -1.25rem;
-}
-
-.absolute-top {
-    position: absolute;
-    top: 0;
-}
-
-.absolute-right {
-    position: absolute;
-    right: 0;
+    bottom: -.9rem;
 }
 
 .absolute-bottom {
@@ -58,6 +44,16 @@ a {
 .absolute-left {
     position: absolute;
     left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-top {
+    position: absolute;
+    top: 0;
 }
 
 .active-text-red:active {
@@ -80,20 +76,20 @@ a {
     text-align: right;
 }
 
-.aspect-square {
-    aspect-ratio: 1/1;
-}
-
 .aspect-landscape {
     aspect-ratio: 5/4;
 }
 
 .aspect-panorama {
-    aspect-ratio: 2/1
+    aspect-ratio: 2/1;
 }
 
 .aspect-portrait {
     aspect-ratio: 4/5;
+}
+
+.aspect-square {
+    aspect-ratio: 1/1;
 }
 
 .aspect-widescreen {
@@ -109,7 +105,7 @@ a {
     background-color: #d82737;
 }
 
-.bg-opaque-white {
+.bg-opaque {
     background-color: rgba(255, 255, 255, .25);
 }
 
@@ -138,6 +134,10 @@ a {
     border-style: solid;
 }
 
+.border-black {
+    border-color: black !important;
+}
+
 .border-none {
     border: none;
 }
@@ -147,30 +147,51 @@ a {
     border-style: solid;
 }
 
-.border-black {
-    border-color: black !important;
-}
-
 .border-white {
     border-color: white !important;
 }
 
-.btn-sm {
-    padding: .5rem 1rem;
-    cursor: pointer;
-}
-
 .btn {
+    border-width: 2px;
+    border-style: solid;
     padding: 1rem 2rem;
-    cursor: pointer;
 }
 
-.compressed {
-    letter-spacing: -.2rem;
+.btn-sm {
+    border-width: 2px;
+    border-style: solid;
+    padding: .5rem 1rem;
+}
+
+.compress-lg {
+    letter-spacing: -2px;
+}
+
+.compress-xl {
+    letter-spacing: -3px;.carousel-slide {
+        aspect-ratio: 5/4;
+    }
+}
+
+.compress-xxl {
+    letter-spacing: -4px;
+}
+
+.container:hover .bg-img {
+    transform: scale(1.1);
 }
 
 .decoration-none {
     text-decoration: none;
+}
+
+.fill-space {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
 }
 
 .flex-center {
@@ -184,15 +205,15 @@ a {
 }
 
 .font-xpress {
-    font-family: "XpressRounded";
-}
-
-.font-xpress-light {
-    font-family: "XpressRoundedLight";
+    font-family: "XpressRounded", Lato, sans-serif;
 }
 
 .font-xpress-bold {
-    font-family: "XpressRoundedBold";
+    font-family: "XpressRoundedBold", Lato, sans-serif;
+}
+
+.font-xpress-light {
+    font-family: "XpressRoundedLight", Lato, sans-serif;
 }
 
 .font-xs {
@@ -239,20 +260,12 @@ a {
     height: 33.3%;
 }
 
-html {
-    scrollbar-width: none;
-}
-
-html::-webkit-scrollbar {
+.hidden {
     display: none;
 }
 
 .hover-bg-white:hover {
     background-color: white;
-}
-
-.hover-bg-opaque-red:hover {
-    background-color: rgba(216, 39, 55, .5);
 }
 
 .hover-text-black:hover {
@@ -267,20 +280,20 @@ html::-webkit-scrollbar {
     margin: auto;
 }
 
-.margin-top {
-    margin-top: 1rem;
-}
-
-.margin-right {
-    margin-right: 1rem;
-}
-
 .margin-bottom {
     margin-bottom: 1rem;
 }
 
 .margin-left {
     margin-left: 1rem;
+}
+
+.margin-right {
+    margin-right: 1rem;
+}
+
+.margin-top {
+    margin-top: 1rem;
 }
 
 .margin-x {
@@ -301,6 +314,30 @@ html::-webkit-scrollbar {
     margin-bottom: 1rem;
 }
 
+.max-h-half-screen {
+    max-height: 50dvh;
+}
+
+.max-w-xxs {
+    max-width: 394px;
+}
+
+.max-w-xs {
+    max-width: 475px;
+}
+
+.max-w-sm {
+    max-width: 640px;
+}
+
+.max-w-md {
+    max-width: 768px;
+}
+
+.max-w-lg {
+    max-width: 1024px;
+}
+
 .object-contain {
     object-fit: contain;
 }
@@ -311,7 +348,6 @@ html::-webkit-scrollbar {
 
 .outline-black {
     -webkit-text-stroke: 2px black;
-    text-shadow: 4px 4px 0 black;
 }
 
 .outline-blue {
@@ -331,7 +367,6 @@ html::-webkit-scrollbar {
 
 .outline-red {
     -webkit-text-stroke: 2px #d82737;
-    text-shadow: 4px 4px 0 #d82737;
 }
 
 .outline-yellow {
@@ -347,20 +382,8 @@ html::-webkit-scrollbar {
     padding: .25rem;
 }
 
-.padding-sm {
-    padding: .5rem;
-}
-
 .padding {
     padding: 1rem;
-}
-
-.padding-top {
-    padding-top: 1rem;
-}
-
-.padding-right {
-    padding-right: 1rem;
 }
 
 .padding-bottom {
@@ -369,6 +392,18 @@ html::-webkit-scrollbar {
 
 .padding-left {
     padding-left: 1rem;
+}
+
+.padding-right {
+    padding-right: 1rem;
+}
+
+.padding-sm {
+    padding: .5rem;
+}
+
+.padding-top {
+    padding-top: 1rem;
 }
 
 .padding-x {
@@ -389,24 +424,36 @@ html::-webkit-scrollbar {
     padding-bottom: 1rem;
 }
 
-.relative {
-    position: relative;
+.pointer {
+    cursor: pointer;
 }
 
-.rounded-sm {
-    border-radius: .5rem;
+.relative {
+    position: relative;
 }
 
 .rounded {
     border-radius: 1rem;
 }
 
+.rounded-bottom {
+    border-radius: 0  0 1rem 1rem;
+}
+
+.rounded-sm {
+    border-radius: .5rem;
+}
+
 .rounded-top {
     border-radius: 1rem 1rem 0 0;
 }
 
-.rounded-bottom {
-    border-radius: 0  0 1rem 1rem;
+.scrollbar-hidden {
+    scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
 }
 
 .space-xs {
@@ -421,11 +468,11 @@ html::-webkit-scrollbar {
     margin-right: 1rem;
 }
 
-.space-lg {
+.space-md {
     margin-right: 1.5rem;
 }
 
-.space-xl {
+.space-lg {
     margin-right: 2rem;
 }
 
@@ -441,11 +488,11 @@ html::-webkit-scrollbar {
     margin-left: 1rem;
 }
 
-.tab-lg {
+.tab-md {
     margin-left: 1.5rem;
 }
 
-.tab-xl {
+.tab-lg {
     margin-left: 2rem;
 }
 
@@ -453,8 +500,22 @@ html::-webkit-scrollbar {
     color: inherit;
 }
 
+.text-shadow {
+    text-shadow: 2px 2px 0 black;
+}
+
+.text-shadow-red {
+    text-shadow: 2px 2px 0 #d82737;
+}
+
 .text-white {
     color: white;
+}
+
+.ticker-scroll {
+    width: fit-content;
+    white-space: nowrap;
+    animation: loop 30s linear infinite;
 }
 
 .ticker-wrapper {
@@ -462,13 +523,6 @@ html::-webkit-scrollbar {
     background-size: contain;
     padding: .5rem 0;
     overflow: hidden;
-}
-
-.ticker-scroll {
-    display: flex;
-    width: fit-content;
-    white-space: nowrap;
-    animation: loop 30s linear infinite;
 }
 
 .transition-500 {
@@ -495,14 +549,6 @@ html::-webkit-scrollbar {
     width: 100dvw;
 }
 
-.w-sixty {
-    width: 60%;
-}
-
 .w-third {
     width: 33.3%;
-}
-
-.w-two-thirds {
-    width: 66.6%;
 }

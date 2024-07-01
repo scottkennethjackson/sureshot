@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scrollbar-hidden">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,71 +22,69 @@
     </head>
     <body>
         <main class="overflow-hidden">
-            <section id="banner" class="carousel-wrapper w-full">
+            <section id="banner" class="carousel-wrapper">
                 <div class="carousel">
                     <div id="slide1" class="carousel-slide initial">
-                        <div class="absolute-bottom margin rounded bg-opaque-white w-sixty padding">
-                            <h2 class="break uppercase text-white font-xpress-bold font-md">Welcome, Take a Seat. Here's the Menu.</h2>
-                            <a href="#"><button class="btn-sm border-thick border-white bg-transparent hover-bg-white rounded-sm w-full uppercase text-white hover-text-black active-text-red font-xpress-bold">Shop All</button></a>
-                        </div>
-                    </div>
-                    <div id="slide2" class="carousel-slide">
-                        <div class="absolute-bottom margin rounded bg-opaque-white w-sixty padding">
-                            <h2 class="break uppercase text-white font-xpress-bold font-md">Lorem ipsum dolor sit amet.</h2>
-                            <a href="#"><button class="btn-sm border-thick border-white bg-transparent hover-bg-white rounded-sm w-full uppercase text-white hover-text-black active-text-red font-xpress-bold">Lorem ipsum</button></a>
-                        </div>
-                    </div>
-                    <div id="slide3" class="carousel-slide">
-                        <div class="absolute-bottom margin rounded bg-opaque-white w-sixty padding">
-                            <h2 class="break uppercase text-white font-xpress-bold font-md">Lorem ipsum dolor sit amet.</h2>
-                            <a href="#"><button class="btn-sm border-thick border-white bg-transparent hover-bg-white rounded-sm w-full uppercase text-white hover-text-black active-text-red font-xpress-bold">Lorem ipsum</button></a>
+                        <div class="absolute-bottom margin rounded bg-opaque max-w-xs padding">
+                            <h3 class="margin-bottom uppercase text-white font-xpress-bold font-md">Welcome, Take a Seat. Here's the Menu.</h3>
+                            <a href="#"><button class="btn-sm border-white bg-transparent hover-bg-white rounded-sm w-full uppercase text-white hover-text-black active-text-red font-xpress-bold pointer">Shop All</button></a>
                         </div>
                     </div>
 
-                    <div class="next-btn"></div>
-                    <div class="prev-btn"></div>
+                    <div id="slide2" class="carousel-slide">
+                        <div class="absolute-bottom margin rounded bg-opaque max-w-xs padding">
+                            <h3 class="margin-bottom uppercase text-white font-xpress-bold font-md">Lorem ipsum dolor sit amet.</h3>
+                            <a href="#"><button class="btn-sm border-white bg-transparent hover-bg-white rounded-sm w-full uppercase text-white hover-text-black active-text-red font-xpress-bold pointer">Lorem ipsum</button></a>
+                        </div>
+                    </div>
+
+                    <div id="slide3" class="carousel-slide">
+                        <div class="absolute-bottom margin rounded bg-opaque max-w-xs padding">
+                            <h3 class="margin-bottom uppercase text-white font-xpress-bold font-md">Lorem ipsum dolor sit amet.</h3>
+                            <a href="#"><button class="btn-sm border-white bg-transparent hover-bg-white rounded-sm w-full uppercase text-white hover-text-black active-text-red font-xpress-bold pointer">Lorem ipsum</button></a>
+                        </div>
+                    </div>
+
+                    <div class="next-btn hidden"></div>
+                    <div class="prev-btn hidden"></div>
                 </div>
             </section>
 
-            <section id="navigation" class="margin">
-                <div class="flex-center flex-col">
-                    <a href="#" class="nav-block relative flex-center margin-bottom rounded w-full aspect-widescreen overflow-hidden" role="button">
-                        <span id="buy-beer" class="bg-img transition-500 bg-center w-full h-full"></span>
-                        <span class="absolute flex-center w-full h-full uppercase text-white outline-red font-xpress-bold font-xxl">Buy Beer</span>
+            <section id="navigation" class="margin-x lg-margin-auto max-w-lg">
+                <div class="flex-center md-row flex-col margin-top">
+                    <a href="#" class="container sm-space relative flex-center margin-bottom md-space rounded w-full aspect-widescreen overflow-hidden" role="button">
+                        <div id="buy-beer" class="bg-img transition-500 bg-center fill-space"></div>
+                        <h2 class="absolute uppercase text-shadow-red compress-xxl text-white outline-red font-xpress-bold font-xxl">Buy Beer</h2>
                     </a>
 
-                    <a href="#" class="nav-block relative flex-center margin-bottom rounded w-full aspect-widescreen overflow-hidden" role="button">
-                        <span id="visit-us" class="bg-img transition-500 bg-center w-full h-full"></span>
-                        <span class="absolute flex-center w-full h-full uppercase text-white outline-red font-xpress-bold font-xxl">Visit Us</span>
+                    <a href="#" class="container sm-tab relative flex-center margin-bottom md-tab rounded w-full aspect-widescreen overflow-hidden" role="button">
+                        <div id="visit-us" class="bg-img transition-500 bg-center fill-space"></div>
+                        <h2 class="absolute uppercase text-shadow-red compress-xxl text-white outline-red font-xpress-bold font-xxl">Visit Us</h2>
                     </a>
                 </div>
 
-                <div class="flex-center flex-col">
-                    <div class="flex-center margin-bottom w-full h-full">
-                        <a href="#" class="nav-block relative flex-center space-sm rounded w-full aspect-square overflow-hidden" role="button">
-                            <span id="merch" class="bg-img transition-500 bg-center w-full h-full"></span>
-                            <span class="absolute w-full h-full"></span>
-                            <span class="absolute-bottom flex-center bg-red w-full uppercase text-white outline-red font-xpress-bold font-xl">Merch</span>
+                <div class="flex-center flex-col md-row">
+                    <div class="flex-center margin-bottom md-space fill-space">
+                        <a href="#" class="container relative space-sm rounded w-full aspect-square overflow-hidden">
+                            <div id="merch" class="bg-img transition-500 bg-center fill-space"></div>
+                            <h2 class="absolute-bottom bg-red w-full align-center uppercase compress-xl text-white outline-red font-xpress-bold font-xl">Merch</h2>
                         </a>
 
-                        <a href="#" class="nav-block relative flex-center tab-sm rounded w-full aspect-square overflow-hidden" role="button">
-                            <span id="subs" class="bg-img transition-500 bg-center w-full h-full"></span>
-                            <span class="absolute w-full h-full"></span>
-                            <span class="absolute-bottom flex-center bg-red w-full uppercase text-white outline-red font-xpress-bold font-xl">Subs</span>
+                        <a href="#" class="container relative tab-sm rounded w-full aspect-square overflow-hidden">
+                            <div id="subs" class="bg-img transition-500 bg-center fill-space"></div>
+                            <h2 class="absolute-bottom bg-red w-full align-center uppercase compress-xl text-white outline-red font-xpress-bold font-xl">Subs</h2>
                         </a>
                     </div>
 
-                    <div class="flex-center w-full h-full">
-                        <a href="#" class="nav-block relative flex-center space-sm rounded w-full aspect-square overflow-hidden" role="button">
-                            <span id="mission" class="bg-img transition-500 bg-center w-full h-full"></span>
-                            <span class="absolute w-full h-full"></span>
-                            <span class="absolute-bottom flex-center bg-red w-full uppercase text-white outline-red font-xpress-bold font-xl">Mission</span>
+                    <div class="flex-center margin-bottom md-tab fill-space">
+                        <a href="#" class="container relative space-sm rounded w-full aspect-square overflow-hidden">
+                            <div id="mission" class="bg-img transition-500 bg-center fill-space"></div>
+                            <h2 class="absolute-bottom bg-red w-full align-center uppercase compress-xl text-white outline-red font-xpress-bold font-xl">Mission</h2>
                         </a>
 
-                        <a href="#" class="nav-block relative flex-center tab-sm rounded w-full aspect-square overflow-hidden" role="button">
-                            <span id="events" class="bg-img transition-500 bg-center w-full h-full"></span>
-                            <span class="absolute w-full h-full"></span>
-                            <span class="absolute-bottom flex-center bg-red w-full uppercase text-white outline-red font-xpress-bold font-xl">Events</span>
+                        <a href="#" class="container relative tab-sm rounded w-full aspect-square overflow-hidden">
+                            <div id="events" class="bg-img transition-500 bg-center fill-space"></div>
+                            <h2 class="absolute-bottom bg-red w-full align-center uppercase compress-xl text-white outline-red font-xpress-bold font-xl">Events</h2>
                         </a>
                     </div>
                 </div>
@@ -95,56 +93,63 @@
             <section id="fresh-drops">
                 <div class="ticker-wrapper">
                     <div class="ticker-scroll">
-                        <h2 class="uppercase text-white outline-red font-xpress-bold font-xl">Freshest Drops &nbsp; Freshest Drops &nbsp; Freshest Drops &nbsp; Freshest Drops &nbsp; Freshest Drops</h2>
+                        <h2 class="uppercase compress-xl text-white outline-red font-xpress-bold font-xl">Freshest Drops &emsp; Freshest Drops &emsp; Freshest Drops &emsp; Freshest Drops &emsp; Freshest Drops &emsp; Freshest Drops &emsp; Freshest Drops &emsp; Freshest Drops &emsp; Freshest Drops</h2>
                     </div>
                 </div>
-                <img src="./images/mockup/placeholder.png" class="padding w-full aspect-landscape" alt="laceholder">
-            </section>
-
-            <section id="about" class="relative flex-center flex-col bg-center w-full aspect-widescreen padding">
-                <h2 class="margin-bottom align-center uppercase text-white outline-black font-xpress-bold font-lg">Sureshot are all about bringing smiles to beer. Lorem ipsum dolor sit amet.</h2>
-                <a href="#"><button class="btn border-thick border-white bg-transparent hover-bg-white rounded-sm uppercase text-white hover-text-black active-text-red font-xpress-bold">See More</button></a>
-                <img src="./images/mockup/logo.png" id="sticker-logo" class="sticker absolute" alt="Sureshot logo">
-                <img src="./images/mockup/name-badge.png" id="sticker-namebadge" class="sticker absolute" alt="Hello my name is Sureshot">
-            </section>
-
-            <section id="taproom" class="margin">
-                <h2 class="margin-bottom align-center uppercase text-white outline-red font-xpress-bold font-xl">Our Taproom</h2>
-                <img src="./images/mockup/taproom.jpg" class="margin-bottom rounded w-full" alt="A bartender preparing a pint of delicious Sureshot beer">
-                <div class="margin-bottom">
-                    <p class="break align-justify font-xpress-bold">Nestled in an arch under Piccadilly Station, serving brewery-fresh beers from next door. Proud to have the best beer snacks this side of Cricklewood, plus click & collect Nell's pizza, rotating DJs, big screen sports, games & more.</p>
-                    <p class="align-justify font-xpress-bold">No table bookings necessary. Just come down and have a beer with us!</p>
+                <div class="flex-center margin">
+                    <img src="./images/mockup/placeholder.png" class="w-full max-w-lg aspect-landscape" alt="placeholder">
                 </div>
-                <div class="flex-center flex-col">
-                    <div class="flex-center margin-bottom w-full h-full">
+            </section>
+
+            <section id="about" class="relative flex-center flex-col bg-center w-full max-h-half-screen aspect-widescreen padding">
+                <h3 class="margin-bottom align-center max-w-lg uppercase text-shadow compress-lg text-white outline-black font-xpress-bold font-lg">Sureshot are all about bringing smiles to beer. Lorem ipsum dolor sit amet.</h3>
+                <a href="#"><button class="btn border-white bg-transparent hover-bg-white rounded-sm uppercase text-white hover-text-black active-text-red font-xpress-bold">About Us</button></a>
+                <img src="./images/mockup/logo.png" id="sticker-logo" class="sticker hidden absolute" alt="Sureshot logo">
+                <img src="./images/mockup/name-badge.png" id="sticker-namebadge" class="sticker hidden absolute" alt="Hello my name is Sureshot">
+            </section>
+
+            <section id="taproom" class="margin-x lg-margin-auto max-w-lg">
+                <h2 class="margin-y align-center uppercase text-shadow-red compress-xl text-white outline-red font-xpress-bold font-xl">Our Taproom</h2>
+
+                <div class="flex flex-col md-row">
+                    <img src="./images/mockup/placeholder.png" class="margin-bottom md-space w-full md-half aspect-widescreen" alt="Placeholder">
+
+                    <div class="margin-bottom md-tab md-half align-justify">
+                        <p class="break font-xpress-bold lg-font-md">Nestled in an arch under Piccadilly Station, serving brewery-fresh beers from next door. Proud to have the best beer snacks this side of Cricklewood, plus click & collect Nell's pizza, rotating DJs, big screen sports, games & more.</p>
+                        <p class="font-xpress-bold lg-font-md">No table bookings necessary. Just come down and have a beer with us!</p>
+                    </div>
+                </div>
+
+                <div class="flex-center flex-col md-row">
+                    <div class="flex-center margin-bottom md-space w-full h-full">
                         <div class="relative space-sm w-full">
-                            <a href="#" class="nav-block relative flex-center space-sm rounded w-full aspect-square overflow-hidden" role="button">
-                                <span id="hours" class="bg-img transition-500 bg-center w-full h-full"></span>
+                            <a href="#" class="container relative flex-center rounded w-full aspect-square overflow-hidden" role="button">
+                                <div id="hours" class="bg-img transition-500 bg-center w-full h-full"></div>
                             </a>
-                            <h2 class="absolute-below flex-center w-full uppercase text-white outline-blue font-xpress-bold font-xl">Hours</h2>
+                            <h2 class="absolute-below align-center w-full uppercase compress-lg text-white outline-blue font-xpress-bold font-lg">Hours</h2>
                         </div>
 
                         <div class="relative tab-sm w-full">
-                            <a href="#" class="nav-block relative flex-center space-sm rounded w-full aspect-square overflow-hidden" role="button">
-                                <span id="where" class="bg-img transition-500 bg-center w-full h-full"></span>
+                            <a href="#" class="container relative flex-center rounded w-full aspect-square overflow-hidden" role="button">
+                                <div id="where" class="bg-img transition-500 bg-center w-full h-full"></div>
                             </a>
-                            <h2 class="absolute-below flex-center w-full uppercase text-white outline-green font-xpress-bold font-xl">Where</h2>
+                            <h2 class="absolute-below align-center w-full uppercase compress-lg text-white outline-green font-xpress-bold font-lg">Where</h2>
                         </div>
                     </div>
 
-                    <div class="flex-center margin-bottom w-full h-full">
+                    <div class="flex-center margin-bottom md-tab w-full h-full">
                         <div class="relative space-sm w-full">
-                            <a href="#" class="nav-block relative flex-center space-sm rounded w-full aspect-square overflow-hidden" role="button">
-                                <span id="whats-on" class="bg-img transition-500 bg-center w-full h-full"></span>
+                            <a href="#" class="container relative flex-center rounded w-full aspect-square overflow-hidden" role="button">
+                                <div id="whats-on" class="bg-img transition-500 bg-center w-full h-full"></div>
                             </a>
-                            <h2 class="absolute-below flex-center w-full uppercase text-white outline-red font-xpress-bold font-xl">Things</h2>
+                            <h2 class="absolute-below align-center w-full uppercase compress-lg text-white outline-red font-xpress-bold font-lg">Events</h2>
                         </div>
 
                         <div class="relative tab-sm w-full">
-                            <a href="#" class="nav-block relative flex-center space-sm rounded w-full aspect-square overflow-hidden" role="button">
-                                <span id="pouring" class="bg-img transition-500 bg-center w-full h-full"></span>
+                            <a href="#" class="container relative flex-center rounded w-full aspect-square overflow-hidden" role="button">
+                                <div id="pouring" class="bg-img transition-500 bg-center w-full h-full"></div>
                             </a>
-                            <h2 class="absolute-below flex-center w-full uppercase text-white outline-yellow font-xpress-bold font-xl">Pouring</h2>
+                            <h2 class="absolute-below align-center w-full uppercase compress-lg text-white outline-yellow font-xpress-bold font-lg">Pouring</h2>
                         </div>
                     </div>
                 </div>
@@ -153,46 +158,49 @@
             <section id="core">
                 <div class="ticker-wrapper">
                     <div class="ticker-scroll">
-                        <h2 class="uppercase text-white outline-red font-xpress-bold font-xl">Sureshot Classics &nbsp; Sureshot Classics &nbsp; Sureshot Classics &nbsp; Sureshot Classics &nbsp; Sureshot Classics</h2>
-
+                        <h2 class="uppercase compress-xl text-white outline-red font-xpress-bold font-xl">Core Bangers &emsp; Core Bangers &emsp; Core Bangers &emsp; Core Bangers &emsp; Core Bangers &emsp; Core Bangers &emsp; Core Bangers &emsp; Core Bangers &emsp; Core Bangers</h2>
                     </div>
                 </div>
-                <div class="flex-center flex-col margin">
-                    <div class="margin-bottom">
+
+                <div class="flex flex-col md-row md-around margin-top margin-x max-w-lg lg-margin-auto">
+                    <div class="flex-col margin-bottom rounded bg-milson md-thirtytwo">
                         <div id="milson" class="relative rounded-top bg-center w-full aspect-square">
-                            <img src="./images/mockup/milson.png" id="absolute-milson" class="absolute w-half" alt="">
+                            <img src="./images/mockup/milson.png" id="sticker-milson" class="absolute w-half" alt="Milson logo">
                         </div>
-                        <div class="flex-center flex-col rounded-bottom bg-milson padding text-white">
-                            <p class="break uppercase font-xpress-bold font-lg bold">Milson</p>
+
+                        <div class="adjust flex flex-col rounded-bottom padding text-white">
+                            <p class="break align-center compress-lg uppercase font-xpress-bold font-lg bold">Milson</p>
                             <p class="align-justify uppercase">Our fave pale ale pup. New England Pale Ale brewed with Citra, Galaxy & Mosic. Built on an oaty body for a satisfying gulp, full of tropical fruitiness from a high dry hop. trust the taste you know is top - Milson!</p>
                         </div>
                     </div>
 
-                    <div class="margin-bottom">
+                    <div class="margin-bottom rounded bg-smw md-thirtytwo">
                         <div id="smw" class="relative rounded-top bg-center w-full aspect-square">
-                            <img src="./images/mockup/smw.png" id="absolute-smw" class="absolute w-half" alt="">
+                            <img src="./images/mockup/smw.png" id="sticker-smw" class="absolute w-half" alt="Small Man's Wetsuit logo">
                         </div>
-                        <div class="flex-center flex-col rounded-bottom bg-smw padding text-white">
-                            <p class="break uppercase font-xpress-bold font-lg bold">Small Man's Wetsuit</p>
+
+                        <div class="flex flex-col rounded-bottom padding text-white">
+                            <p class="break align-center compress-lg uppercase font-xpress-bold font-lg bold">Small Man's Wetsuit</p>
                             <p class="align-justify uppercase">Get me a Small Man's! A wee pale dry-hopped with Idaho 7, Mosaic & Galaxy. Cubmerged in hops with a gentle tropicality. Soft corners, light bitterness, and stone fruit edge. Neoprene can bring a tear to your eye.</p>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="margin-bottom rounded bg-football md-thirtytwo">
                         <div id="football-friend" class="relative rounded-top bg-center w-full aspect-square">
-                            <img src="./images/mockup/football-friend.png" id="absolute-football" class="absolute w-half" alt="">
+                            <img src="./images/mockup/football-friend.png" id="sticker-football" class="absolute w-half" alt="Football Friend logo">
                         </div>
-                        <div class="flex-center flex-col rounded-bottom bg-football padding text-white">
-                            <p class="break uppercase font-xpress-bold font-lg bold">Football Friend</p>
-                            <p class="align-justify uppercase">Get me a Small Man's! A wee pale dry-hopped with Idaho 7, Mosaic & Galaxy. Cubmerged in hops with a gentle tropicality. Soft corners, light bitterness, and stone fruit edge. Neoprene can bring a tear to your eye.</p>
+
+                        <div class="flex flex-col rounded-bottom padding text-white">
+                            <p class="break align-center cpompress-lg uppercase font-xpress-bold font-lg bold">Football Friend</p>
+                            <p class="align-justify uppercase">They think it's all over. Helles style Lager brewed with traditional malt bill and noble hops for an authentically continental flavour. Crisp, dry, with a bright straw body and refreshingly bitter edge. Ooh, new friend.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section id="instagram" class="flex-center flex-col">
-                <h2 class="margin-x margin-bottom align-center uppercase font-xpress-bold font-lg">Remember to Smash That Like Button.</h2>
-                <img src="./images/mockup/placeholder.png" class="w-full aspect-panorama" alt="laceholder">
+                <h2 class="margin-x margin-bottom align-center compress-lg uppercase font-xpress-bold font-lg">Remember to Smash That Like Button.</h2>
+                <img src="./images/mockup/placeholder.png" class="w-full aspect-panorama" alt="Placeholder">
             </section>
         </main>
     </body>

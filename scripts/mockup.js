@@ -76,7 +76,7 @@
     const initCarousel = () => {
         setInitialClasses();
         setEventListeners();
-        setInterval(moveNext, 5000)
+        //setInterval(moveNext, 5000)
 
         moving = false;
     };
